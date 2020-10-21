@@ -212,69 +212,9 @@ def recommender(n_clicks, input1, input2, input3, input4):
                 ]
             }
         )
-# @app.callback(Output('output-state', 'object'),
-#               [Input('Submit', 'value')],
-#               [State('ctype', 'value'),
-#                State('effects', 'value'),
-#                State('ailment', 'value'),
-#                State('flavor', 'value'),
-#               ])
 
 
-# #take in button submit and inputs from survery to create recommend output
-# def recommender(submit, input1, input2, input3, input4):
-#                 effs = ' '.join(input2)
-#                 ail = ' '.join(input3)
-#                 fla = ' '.join(input4)
-#                 new = pd.DataFrame([[input1, effs, ail, fla]],
-#                                    columns=['type', 'effects',
-#                                             'ailment', 'flavor'])
-#                 new['text'] = new['type'] + ', ' + new['effects'] + ', ' + new['ailment'] + ', ' + new['flavor']
-#                 recommendations = nn.kneighbors(tfidf.transform(new['text']).todense())[1]
-#                 return {
-#                     'recommendations':[
-#                                         {'recommendation 1':
-#                             {
-#                             'name': df1.iloc[recommendations[0][0]]['name'],
-#                             'type': df1.iloc[recommendations[0][0]]['type'],
-#                             'effects': df1.iloc[recommendations[0][0]]['effects'],
-#                             'ailments': df1.iloc[recommendations[0][0]]['ailment'],
-#                             'flavors': df1.iloc[recommendations[0][0]]['flavor']
-#                             },
-#                             'recommendation 2':
-#                             {
-#                             'name': df1.iloc[recommendations[0][1]]['name'],
-#                             'type': df1.iloc[recommendations[0][1]]['type'],
-#                             'effects': df1.iloc[recommendations[0][1]]['effects'],
-#                             'ailments': df1.iloc[recommendations[0][1]]['ailment'],
-#                             'flavors': df1.iloc[recommendations[0][1]]['flavor']
-#                             },
-#                             'recommendation 3':
-#                             {
-#                             'name': df1.iloc[recommendations[0][2]]['name'],
-#                             'type': df1.iloc[recommendations[0][2]]['type'],
-#                             'effects': df1.iloc[recommendations[0][2]]['effects'],
-#                             'ailments': df1.iloc[recommendations[0][2]]['ailment'],
-#                             'flavors': df1.iloc[recommendations[0][2]]['flavor']
-#                             },
-#                                         }]
-#                 }
+
 if __name__ == '__main__':
     app.run_server(debug=True)          
-                #  return {
-                #     'name': [df1.iloc[recommendations[0]]['name'],
-                #             df1.iloc[recommendations[1]]['name'],
-                #             df1.iloc[recommendations[2]]['name']],
-                #     'type': [df1.iloc[recommendations[0]]['type'],
-                #             df1.iloc[recommendations[1]]['type'],
-                #             df1.iloc[recommendations[2]]['type']],
-                #     'effects': [df1.iloc[recommendations[0]]['effects'],
-                #             df1.iloc[recommendations[1]]['effects'],
-                #             df1.iloc[recommendations[2]]['effects']],
-                #     'ailments': [df1.iloc[recommendations[0]]['ailment'],
-                #             df1.iloc[recommendations[1]]['ailment'],
-                #             df1.iloc[recommendations[2]]['ailment']],
-                #     'flavors': [df1.iloc[recommendations[0]]['flavor'],
-                #             df1.iloc[recommendations[1]]['flavor'],
-                #             df1.iloc[recommendations[2]]['flavor']]
-                # }
+               
