@@ -64,7 +64,7 @@ app.layout = html.Div([
     dbc.Container(id='page-content', className='mt-4'), 
     html.Hr(), 
     footer,
-    html.Img(src='data:image/png;base64,{}'.format(encoded_image))
+    # html.Img(src='data:image/png;base64,{}'.format(encoded_image))
 ])
 
 
