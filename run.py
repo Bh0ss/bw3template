@@ -5,7 +5,7 @@ import dash_bootstrap_components as dbc
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
-from pages import index, predictions, insights, process
+from pages import index, predictions, insights, process, pickled_recommender, pickled_vectorizer
 import base64
 
 # Imports from this application
