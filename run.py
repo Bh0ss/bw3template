@@ -51,8 +51,8 @@ footer = dbc.Container(
 )
 
 
-image_file = 'assets\lambda.png'
-encoded_image = base64.b64encode(open(image_file, 'rb').read())
+# image_file = 'assets\lambda.png'
+# encoded_image = base64.b64encode(open(image_file, 'rb').read())
 
 # Layout docs:
 # html.Div: https://dash.plot.ly/getting-started
