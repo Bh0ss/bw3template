@@ -22,7 +22,7 @@ column1 = dbc.Col(
 
             ✅ MedCabinet is designed with the user in mind, we take your input to help narrow down your choices of weed that will help fit your lifestyle.
 
-            ❌ MedCabinet is delicatly enhanced to give each user the best possible feedback. Working closely with a expert team of data scientist we have sourced get the highest quality information to help our patients with incredible accuracy.
+            ❌ MedCabinet is delicatly enhanced to give each user the best possible feedback. Working closely with a expert team of data scientist we have sourced the highest quality information to help our patients with incredible accuracy.
 
             """
         ),
