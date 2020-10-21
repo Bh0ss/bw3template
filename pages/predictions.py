@@ -13,8 +13,8 @@ import pickle
 from app import app
 
 #create models for nlp
-nn = pickle.load(open('pages\pickled_recommender.pkl', 'rb'))
-tfidf = pickle.load(open('pages\pickled_vectorizer.pkl', 'rb'))
+nn = pickle.load(open('pickled_vectorizer.pkl', 'rb'))
+tfidf = pickle.load(open('pickled_recommender.pkl', 'rb'))
 
 
 # nn = pickle.load(open('recommender_model.pkl', 'rb'))
